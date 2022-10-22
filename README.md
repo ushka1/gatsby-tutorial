@@ -55,4 +55,5 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
 
 # Notes
 
-- https://www.gatsbyjs.com/docs/how-to/local-development/graphql-typegen/#configuring-the-vscode-graphql-plugin
+1. `npm init gatsby`
+2. https://www.gatsbyjs.com/docs/how-to/local-development/graphql-typegen/#configuring-the-vscode-graphql-plugin
