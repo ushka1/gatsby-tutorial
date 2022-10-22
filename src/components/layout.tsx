@@ -4,8 +4,8 @@ import * as React from 'react';
 import {
   container,
   heading,
-  navLinks,
   navLinkItem,
+  navLinks,
   navLinkText,
 } from './layout.module.scss';
 
