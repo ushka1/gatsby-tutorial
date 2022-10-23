@@ -67,3 +67,7 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
 
 1. Zainstaluj `typescript-plugin-css-modules` i wykonaj instrukcje jak na github.
 1. Zainstaluj `gatsby-plugin-sass`.
+
+### Images
+
+1. StaticImage potrzebuje bezpośredniej ścieżki, gdyż generuje zdjęcia na tej podstawie.s

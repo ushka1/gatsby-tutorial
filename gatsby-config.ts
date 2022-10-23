@@ -12,17 +12,18 @@ const config: GatsbyConfig = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-eslint`,
-    'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
-    'gatsby-alias-imports',
-    'gatsby-plugin-mdx',
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-alias-imports`,
+    `gatsby-plugin-mdx`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
         name: `blog`,
         path: `${__dirname}/blog`,
       },
     },
+    `gatsby-plugin-tsconfig-paths`,
   ],
 };
 
