@@ -21,6 +21,7 @@
     "@mdx-js/react": "^2.1.5",
     "gatsby": "^4.24.4",
     "gatsby-alias-imports": "^1.0.6",
+    "gatsby-plugin-eslint": "^4.0.2",
     "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-mdx": "^4.3.0",
     "gatsby-plugin-sass": "^5.24.0",
@@ -37,7 +38,8 @@
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
-    "eslint": "^7.32.0",
+    "eslint": "^8.26.0",
+    "eslint-config-react-app": "^7.0.1",
     "typescript": "^4.8.3",
     "typescript-plugin-css-modules": "^3.4.0"
   }

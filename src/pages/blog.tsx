@@ -6,11 +6,11 @@ function BlogPage({ data }: PageProps<Queries.BlogPageQuery>) {
   return (
     <Layout pageTitle='My Blog Posts'>
       <ul>
-        {data.allMdx.nodes.map((node: any) => (
-          <article key={node.id}>
-            <h2>{node.frontmatter.title}</h2>
-            <p>Posted: {node.frontmatter.date}</p>
-            <p>{node.excerpt}</p>
+        {data.allMdx.nodes.map((n) => (
+          <article key={n.id}>
+            <h2>{n?.frontmatter?.title}</h2>
+            <p>Posted: {n?.frontmatter?.date}</p>
+            <p>{n?.excerpt}</p>
           </article>
         ))}
       </ul>
@@ -39,9 +39,9 @@ export const query = graphql`
   }
 `;
 
-export const Head = ({ data }: any) => (
+export const Head = ({ data }: PageProps<Queries.BlogPageQuery>) => (
   <>
-    <title>My Blog Posts | {data.site.siteMetadata.title}</title>
+    <title>My Blog Posts | {data.site?.siteMetadata?.title}</title>
   </>
 );
 

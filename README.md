@@ -53,7 +53,17 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
 
 [<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
 
-# Notes
+# Setup
 
 1. `npm init gatsby`
-2. https://www.gatsbyjs.com/docs/how-to/local-development/graphql-typegen/#configuring-the-vscode-graphql-plugin
+
+### Eslint + Typegen:
+
+1. Zainstaluj eslint 8^ i zrób config z `extend` https://www.gatsbyjs.com/docs/how-to/custom-configuration/eslint/ dzięki temu będzie działało wszystko jak w default gatsby eslint.
+1. Zrób typescript typegen oraz eslint typegen https://www.gatsbyjs.com/docs/how-to/local-development/graphql-typegen/#configuring-the-vscode-graphql-plugin.
+1. Sprawdź czy jest to dla vscode extension https://www.gatsbyjs.com/docs/how-to/local-development/graphql-typegen/#configuring-the-vscode-graphql-plugin.
+
+### CSS/SCSS Modules + Typescript:
+
+1. Zainstaluj `typescript-plugin-css-modules` i wykonaj instrukcje jak na github.
+1. Zainstaluj `gatsby-plugin-sass`.
