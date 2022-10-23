@@ -5,10 +5,13 @@ import * as React from 'react';
 function BlogPage({ data }: any) {
   return (
     <Layout pageTitle='My Blog Posts'>
-      <p>My cool posts will go in here</p>
       <ul>
-        {data.allFile.nodes.map((n: any) => (
-          <li key={n.name}>{n.name}</li>
+        {data.allMdx.nodes.map((node: any) => (
+          <article key={node.id}>
+            <h2>{node.frontmatter.title}</h2>
+            <p>Posted: {node.frontmatter.date}</p>
+            <p>{node.excerpt}</p>
+          </article>
         ))}
       </ul>
     </Layout>
@@ -17,9 +20,15 @@ function BlogPage({ data }: any) {
 
 export const query = graphql`
   query {
-    allFile(filter: { sourceInstanceName: { eq: "blog" } }) {
+    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
       nodes {
-        name
+        id
+        excerpt
+        frontmatter {
+          title
+          date(formatString: "DD/MM/YYYY")
+          slug
+        }
       }
     }
     site {
@@ -32,7 +41,7 @@ export const query = graphql`
 
 export const Head = ({ data }: any) => (
   <>
-    <title>{data.site.siteMetadata.title} | My Blog Posts</title>
+    <title>My Blog Posts | {data.site.siteMetadata.title}</title>
   </>
 );
 
