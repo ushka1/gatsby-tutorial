@@ -1,8 +1,8 @@
 import Layout from 'components/layout';
-import { graphql } from 'gatsby';
+import { graphql, PageProps } from 'gatsby';
 import * as React from 'react';
 
-function BlogPage({ data }: any) {
+function BlogPage({ data }: PageProps<Queries.BlogPageQuery>) {
   return (
     <Layout pageTitle='My Blog Posts'>
       <ul>
@@ -19,7 +19,7 @@ function BlogPage({ data }: any) {
 }
 
 export const query = graphql`
-  query {
+  query BlogPage {
     allMdx(sort: { fields: frontmatter___date, order: DESC }) {
       nodes {
         id

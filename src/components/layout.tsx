@@ -17,7 +17,7 @@ type LayoutProps = {
 
 function Layout({ pageTitle, children }: LayoutProps) {
   const data = useStaticQuery(graphql`
-    query {
+    query Layout {
       site {
         siteMetadata {
           title
