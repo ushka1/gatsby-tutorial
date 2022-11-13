@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.1.5",
-    "gatsby": "^4.24.4",
+    "gatsby": "^4.24.8",
     "gatsby-alias-imports": "^1.0.6",
     "gatsby-plugin-eslint": "^4.0.2",
     "gatsby-plugin-image": "^2.24.0",
@@ -28,8 +28,10 @@
     "gatsby-plugin-sharp": "^4.24.0",
     "gatsby-plugin-tsconfig-paths": "^1.0.5",
     "gatsby-source-filesystem": "^4.24.0",
+    "gatsby-transformer-sharp": "^4.24.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-markdown": "^8.0.3",
     "sass": "^1.55.0"
   },
   "devDependencies": {

@@ -65,9 +65,22 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
 
 ### CSS/SCSS Modules + Typescript:
 
-1. Zainstaluj `typescript-plugin-css-modules` i wykonaj instrukcje jak na github.
+1. Zainstaluj `typescript-plugin-css-modules` i wykonaj instrukcje jak na github pamietaj o workspace ts.
 1. Zainstaluj `gatsby-plugin-sass`.
+1. TSC i tak nie zadziała, ale IDE zadziałą
+1. W przeglądarce są linkacze
+1. Ten plugin w tsconfig to pomage IDE'owi ale nie pomaga tsc bo jest zjebane (linkacz w przegladarce)
 
 ### Images
 
 1. StaticImage potrzebuje bezpośredniej ścieżki, gdyż generuje zdjęcia na tej podstawie.s
+
+### Typing
+
+1. `props :PageProps & LayoutProps` JEDNAK NIE
+1. Gdy Ci VScode graphql nie sugeruje nowych rzeczy, zrób F1 + Graphql Manual Restart
+1. Restart GRAPHQL, TYPESCIRPT, ESLINT serverów w vscode
+
+### Typegen
+
+Jest cos zjebany troszki eee no xd!

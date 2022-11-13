@@ -8,23 +8,23 @@
   color: rebeccapurple;
 }
 
-.nav-links {
+.navLinks {
   display: flex;
   list-style: none;
   padding-left: 0;
 }
 
-.nav-link {
-  &-item {
+.navLink {
+  &Item {
     padding-right: 2rem;
   }
 
-  &-text {
+  &Text {
     color: black;
   }
 }
 
-.site-title {
+.siteTitle {
   font-size: 3rem;
   color: gray;
   font-weight: 700;

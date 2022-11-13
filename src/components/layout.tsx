@@ -1,13 +1,12 @@
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import * as React from 'react';
-
 import {
   container,
-  heading,
-  navLinkItem,
-  navLinks,
-  navLinkText,
   siteTitle,
+  navLinkItem,
+  navLinkText,
+  navLinks,
+  heading,
 } from './layout.module.scss';
 
 type LayoutProps = {
