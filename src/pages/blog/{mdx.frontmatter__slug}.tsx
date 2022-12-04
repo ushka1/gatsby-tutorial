@@ -11,6 +11,11 @@ function BlogPost({
 }: PageProps<Queries.BlogPostPageQuery>) {
   console.log(pageContext); // these are available in query
 
+  const prices = data.mdx?.frontmatter?.prices;
+  if (prices) {
+    console.log(Object.entries(prices).sort((a, b) => a[1] - b[1])[0]);
+  }
+
   const image = getImage(data?.mdx?.frontmatter?.hero_image as ImageDataLike);
 
   return (
@@ -21,6 +26,11 @@ function BlogPost({
           alt={data?.mdx?.frontmatter?.hero_image_alt || ''}
         />
       )}
+      <ul>
+        {data.mdx?.frontmatter?.tags?.map((t) => (
+          <li>{t}</li>
+        ))}
+      </ul>
       <p>Posted: {data.mdx?.frontmatter?.date}</p>
       {children}
     </Layout>
@@ -33,6 +43,12 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "DD/MM/YYYY")
+        tags
+        prices {
+          S
+          M
+          L
+        }
         hero_image_alt
         hero_image {
           childImageSharp {

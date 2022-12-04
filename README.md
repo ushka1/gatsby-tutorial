@@ -84,3 +84,11 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
 ### Typegen
 
 Jest cos zjebany troszki eee no xd!
+
+### Graphsql
+
+Klikniecie na 3 kropki w graphiql generuje fragmenta
+
+### TODO
+
+- pwa

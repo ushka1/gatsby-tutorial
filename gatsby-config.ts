@@ -14,7 +14,6 @@ const config: GatsbyConfig = {
     `gatsby-plugin-eslint`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    `gatsby-alias-imports`,
     `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
