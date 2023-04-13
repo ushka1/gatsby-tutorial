@@ -1,4 +1,4 @@
-// import { GatsbyNode } from 'gatsby';
+import { CreateNodeArgs } from 'gatsby';
 
 // export const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] =
 //   ({ actions: { createTypes, printTypeDefinitions }, schema }) => {
@@ -19,3 +19,11 @@
 
 //     createTypes(typeDefs);
 //   };
+
+exports.onCreateNode = ({ node, actions }: CreateNodeArgs) => {
+  const { createNode } = actions;
+
+  if (node.internal.type === `Mdx`) {
+    createNode({});
+  }
+};

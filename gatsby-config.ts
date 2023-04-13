@@ -22,8 +22,22 @@ const config: GatsbyConfig = {
         path: `${__dirname}/blog`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `dogs`,
+        path: `${__dirname}/dogs`,
+      },
+    },
     `gatsby-plugin-tsconfig-paths`,
     'gatsby-transformer-sharp',
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/categories`,
+      },
+    },
   ],
 };
 
